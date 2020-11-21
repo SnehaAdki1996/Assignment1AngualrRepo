@@ -1,0 +1,16 @@
+<p>login-component works!</p>
+
+<div style="padding-top: 20px"> Login Page </div>
+<div>
+    <label>User Name </label>
+    <textarea name="username" #username id="username" cols="30" rows="10" ></textarea>
+
+    <label>Password</label>
+    <textarea name="password" #password id="password" cols="30" rows="10"></textarea>
+
+    <button (click)="login(username,password)"> Login</button>
+</div>
+
+<div *ngIf="!loginSuccess">
+    Invalid Credentials
+</div>
